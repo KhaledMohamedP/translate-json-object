@@ -3,23 +3,30 @@
 
 
 # Install 
-`npm install -S translate-json-object`
+```bash
+npm install -S translate-json-object
+```
 
 # API 
 
-`var translateObject = require('translate-json-object')` 
+```javasript
+var translateObject = require('translate-json-object');
+translateObject(srcObject, langageuString, googleTranslateAPITokenString)
+```
 
-`translateObject(srcObject, langageuString, googleTranslateAPITokenString)`
 
-*  srcObject: `Object` It's the object you want to translate 
-*  langageuString: `String` the language you wish to translate too (e.g 'es', 'fr', 'ar'...) 
-*  googleTranslateAPITokenString: `String` your google api key for translate service
-
+| Params                        | Type          | Description  |
+| ----------------------------- |:-------------:| ------------|
+| srcObject                     | `Object`      |  It's the object you want to translate  |
+| langageuString                | `String`      |  The language you wish to translate too (e.g 'es', 'fr', 'ar'...)  |
+| googleTranslateAPITokenString | `String`      |  Your google api key for translate service |
 
 # Example 
 First install: 
 
-`npm install -S translate-json-object`
+```bash
+npm install -S translate-json-object
+```
 
 then use: 
 

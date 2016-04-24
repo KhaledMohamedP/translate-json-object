@@ -1,0 +1,26 @@
+{
+  "name": "translate-json-object",
+  "version": "1.0.0",
+  "description": "Translate JOSN object to any languages via google translate",
+  "main": "lib/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhaledMohamedP/translate-json-object.git"
+  },
+  "keywords": [
+    "translate",
+    "object",
+    "JSON",
+    "google",
+    "translate"
+  ],
+  "author": "Khaled Mohamed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KhaledMohamedP/translate-json-object/issues"
+  },
+  "homepage": "https://github.com/KhaledMohamedP/translate-json-object#readme"
+}

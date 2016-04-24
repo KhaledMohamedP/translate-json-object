@@ -2,37 +2,39 @@
 `Please note this package is still under development`
 
 
-# Install 
+# Install
 ```bash
 npm install -S translate-json-object
 ```
 
-# API 
+# API
 
 ```javascript
 var translateObject = require('translate-json-object');
-translateObject(srcObject, langageuString, googleTranslateAPITokenString)
+translateObject(srcObject, languageString, googleTranslateAPITokenString)
 ```
 
 
 | Params                        | Type          | Description  |
-| ----------------------------- |:-------------:| ------------|
-| srcObject                     | `Object`      |  It's the object you want to translate  |
-| langageuString                | `String`      |  The language you wish to translate too (e.g 'es', 'fr', 'ar'...)  |
-| googleTranslateAPITokenString | `String`      |  Your google api key for translate service |
+| ----------------------------- |:-------------:|:-------------|
+| srcObject                     | `Object`      | It's the object you want to translate  |
+| languageString                | `String`      | The language you wish to translate too (e.g 'es', 'fr', 'ar'...)  |
+| googleTranslateAPITokenString | `String`      | Your google api key for translate service |
 
-# Example 
-First install: 
+# Example
+First install:
 
 ```bash
 npm install -S translate-json-object
 ```
 
-then use: 
+then use:
 
 ```javascript
+// Get the module
 var translateObject = require('translate-json-object');
 
+// Your source object, note you can get this from a JSON file ;)
 var obj = {
   "name": "Please enter your name",
     "click": "click here",
@@ -42,6 +44,7 @@ var obj = {
     }
 };
 
+// Translate
 var promise = translateObject(obj, 'es', 'googleTranslateAPIToken');
 
 promise.then(function(data) {
@@ -51,4 +54,4 @@ promise.then(function(data) {
     //   nested: { hello: 'Hola', world: 'mundo' } }
 });
 
-``` 
+```

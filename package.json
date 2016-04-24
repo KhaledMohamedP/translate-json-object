@@ -2,7 +2,7 @@
   "name": "translate-json-object",
   "version": "1.0.0",
   "description": "Translate JOSN object to any languages via google translate",
-  "main": "lib/main.js",
+  "main": "lib/TranslateObject.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -9,7 +9,7 @@ npm install -S translate-json-object
 
 # API 
 
-```javasript
+```javascript
 var translateObject = require('translate-json-object');
 translateObject(srcObject, langageuString, googleTranslateAPITokenString)
 ```

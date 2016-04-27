@@ -1,57 +1,102 @@
 # Translate a JSON Object
-`Please note this package is still under development`
 
+A Node.js module to translate a JSON object from a detectable language to any other language currently via [google translate API](https://cloud.google.com/translate/docs)
 
-# Install
-```bash
-npm install -S translate-json-object
-```
-
-# API
-
-```javascript
-var translateObject = require('translate-json-object');
-translateObject(srcObject, languageString, googleTranslateAPITokenString)
-```
-
-
-| Params                        | Type          | Description  |
-| ----------------------------- |:-------------:|:-------------|
-| srcObject                     | `Object`      | It's the object you want to translate  |
-| languageString                | `String`      | The language you wish to translate too (e.g 'es', 'fr', 'ar'...)  |
-| googleTranslateAPITokenString | `String`      | Your google api key for translate service |
-
-# Example
-First install:
+## ⍗ Install
 
 ```bash
 npm install -S translate-json-object
 ```
 
-then use:
+## Example
+
+#### Setup:
 
 ```javascript
 // Get the module
-var translateObject = require('translate-json-object');
+var translate = require('translate-json-object');
 
-// Your source object, note you can get this from a JSON file ;)
-var obj = {
+// Get an instance
+translateObject = translate();
+
+// Initialize your API
+translateObject.init({
+  googleApiKey: 'googleApiKeyHERE'
+});
+```
+
+#### Use
+
+```javascript
+// A sample object
+var srcObj = {
   "name": "Please enter your name",
-    "click": "click here",
-    "nested": {
-      "hello": "hello",
-      "world": "world"
+  "list": ["translate", "object", "made", "easy"],
+  "nested": {
+    "hello": "hello",
+    "world": "world"
     }
 };
 
-// Translate
-var promise = translateObject(obj, 'es', 'googleTranslateAPIToken');
+var promise = api.translate(srcObj, 'es');
 
 promise.then(function(data) {
   console.log(data);
-    // { name: 'por favor, escriba su nombre',
-    //   click: 'haga clic aquí',
-    //   nested: { hello: 'Hola', world: 'mundo' } }
+  // { name: 'por favor, escriba su nombre',
+  //   list: [ 'traducir', 'objeto', 'hecho', 'fácil' ],
+  //   nested: { hello: 'Hola', world: 'mundo' }
+  // }
 });
 
 ```
+## ◉ API
+
+```javascript
+var api = require('translate-json-object')();
+```
+
+### | `init`
+| Function     | Type          | Returns      | Description  
+| ------------ | ------------- | ------------ | --------------
+| init         | `Function`    | `undefined`  |  `api.init` Initialize the setting of your module instance, it takes a [`setting`](#setting-object) object
+
+```javascript
+var setting = {
+  googleApiKey: 'googleApiKeyHere'
+}
+
+api.init(setting)
+```
+
+~ `setting`: Object
+
+| properties    | Type      | Description  
+| ------------- |---------- | --------------
+| googleApiKey  | `String`  | Google translate api token key
+
+
+### | `translate`
+
+```javascript
+api.translate(sourceObject, language)
+```
+
+| Function     | Type          | Returns      | Description  
+| ------------ | ------------- | ------------ | --------------
+| translate    | `Function`    | `Promise`    |  Translate an object and returns a promise with the translated data
+
+| Parameters    | Type     | Description  
+| ------------- | -------- | --------------
+| sourceObject  | `Object` | The object to be translated
+| language      | `String` | The `language code` you wish to translate too [e.g 'es', 'fr', 'ar'...] - [see list](https://tech.yandex.com/translate/doc/dg/concepts/langs-docpage)
+
+## What's next?
+### TODO
+
+* Allow the use of other translate services such as yandex & bing
+* Unit test
+
+
+### Reach out
+
+Feel free to reach out with feedback via [github](https://github.com/KhaledMohamedP/translate-json-object/issues): `issue`, `feature`, `bug`, or `enhancement` inputs are greatly appreciated

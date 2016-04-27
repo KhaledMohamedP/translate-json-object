@@ -1,8 +1,8 @@
 {
   "name": "translate-json-object",
-  "version": "1.0.2",
-  "description": "Translate JOSN object to any languages via google translate",
-  "main": "lib/TranslateObject.js",
+  "version": "2.0.0",
+  "description": "Translate a JSON object to any language via google translate API",
+  "main": "lib/TranslateJsonObject.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/KhaledMohamedP/translate-json-object#readme",
   "dependencies": {
-    "google-translate": "^1.0.6",
+    "google-translate": "~1.0.6",
     "lodash": "~4.11.1",
     "promise": "~7.1.1"
   }

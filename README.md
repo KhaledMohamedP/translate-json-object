@@ -5,7 +5,7 @@ A Node.js module to translate a JSON object from a detectable language to any ot
 ## ⍗ Install
 
 ```bash
-npm install -S translate-json-object
+npm i translate-json-object
 ```
 
 ## Example
@@ -13,14 +13,13 @@ npm install -S translate-json-object
 #### Setup:
 
 ```javascript
-// Get the module
-var translate = require('translate-json-object');
+var TranslateJSONObject = require('translate-json-object');
 
 // Get an instance
-translateObject = translate();
+var TJO = TranslateJSONObject();
 
 // Initialize your API
-translateObject.init({
+TJO.init({
   googleApiKey: 'googleApiKeyHERE'
 });
 ```
@@ -38,7 +37,7 @@ var srcObj = {
     }
 };
 
-var promise = api.translate(srcObj, 'es');
+var promise = TJO.translate(srcObj, 'es');
 
 promise.then(function(data) {
   console.log(data);
@@ -55,27 +54,28 @@ promise.then(function(data) {
 var api = require('translate-json-object')();
 ```
 
-### | `init`
-| Function     | Type          | Returns      | Description  
-| ------------ | ------------- | ------------ | --------------
-| init         | `Function`    | `undefined`  |  `api.init` Initialize the setting of your module instance, it takes a [`setting`](#setting-object) object
+### | `api.init`
+```javascript
+api.init(setting)
+```
+| Function     | Type          | Description  
+| ------------ | ------------- | --------------
+| init         | `Function`    | Initialize the setting of your module instance, it takes a [`setting`](#setting-object) object
+
+~ `setting`: Object
 
 ```javascript
 var setting = {
   googleApiKey: 'googleApiKeyHere'
 }
-
-api.init(setting)
 ```
-
-~ `setting`: Object
 
 | properties    | Type      | Description  
 | ------------- |---------- | --------------
 | googleApiKey  | `String`  | Google translate api token key
 
 
-### | `translate`
+### | `api.translate`
 
 ```javascript
 api.translate(sourceObject, language)
@@ -83,20 +83,26 @@ api.translate(sourceObject, language)
 
 | Function     | Type          | Returns      | Description  
 | ------------ | ------------- | ------------ | --------------
-| translate    | `Function`    | `Promise`    |  Translate an object and returns a promise with the translated data
+| translate    | `Function`    | `Promise`    |  Translate an object to any given language, it returns a promise with the translated data
 
 | Parameters    | Type     | Description  
 | ------------- | -------- | --------------
 | sourceObject  | `Object` | The object to be translated
-| language      | `String` | The `language code` you wish to translate too [e.g 'es', 'fr', 'ar'...] - [see list](https://tech.yandex.com/translate/doc/dg/concepts/langs-docpage)
+| language      | `String` | The `language code` you wish to translate too e.g `'es', 'fr', 'ar' ...` - [see list](https://tech.yandex.com/translate/doc/dg/concepts/langs-docpage)
 
 ## What's next?
-### TODO
+#### TODO
 
 * Allow the use of other translate services such as yandex & bing
 * Unit test
 
 
-### Reach out
+#### Reach out
 
 Feel free to reach out with feedback via [github](https://github.com/KhaledMohamedP/translate-json-object/issues): `issue`, `feature`, `bug`, or `enhancement` inputs are greatly appreciated
+
+____
+
+↳ Links: [NPM](https://www.npmjs.com/package/translate-json-object) | [GitHub](https://github.com/KhaledMohamedP/translate-json-object)
+
+© MIT

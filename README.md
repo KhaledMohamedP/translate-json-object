@@ -54,36 +54,20 @@ promise.then(function(data) {
 var api = require('translate-json-object')();
 ```
 
-### | `api.init`
-```javascript
-api.init(setting)
-```
-| Function     | Type          | Description  
-| ------------ | ------------- | --------------
-| init         | `Function`    | Initialize the setting of your module instance, it takes a [`setting`](#setting-object) object
+### | `api.init(setting)`
 
-~ `setting`: Object
+Initialize the setting of your module instance, it takes a [`setting`](#setting) object
 
-```javascript
-var setting = {
-  googleApiKey: 'googleApiKeyHere'
-}
-```
+#### || setting
 
 | properties    | Type      | Description  
 | ------------- |---------- | --------------
 | googleApiKey  | `String`  | Google translate api token key
 
 
-### | `api.translate`
+### | `api.translate(sourceObject, language)`
 
-```javascript
-api.translate(sourceObject, language)
-```
-
-| Function     | Type          | Returns      | Description  
-| ------------ | ------------- | ------------ | --------------
-| translate    | `Function`    | `Promise`    |  Translate an object to any given language, it returns a promise with the translated data
+Translate an object to any given language, it returns a promise with the translated data
 
 | Parameters    | Type     | Description  
 | ------------- | -------- | --------------

@@ -1,4 +1,5 @@
 # Translate a JSON Object
+↳ Links: [NPM](https://www.npmjs.com/package/translate-json-object) | [GitHub](https://github.com/KhaledMohamedP/translate-json-object)
 
 A Node.js module to translate a JSON object from a detectable language to any other language currently via [google translate API](https://cloud.google.com/translate/docs)
 
@@ -45,6 +46,8 @@ promise.then(function(data) {
   //   list: [ 'traducir', 'objeto', 'hecho', 'fácil' ],
   //   nested: { hello: 'Hola', world: 'mundo' }
   // }
+}).catch(function(err) {
+  console.log('error ', err)
 });
 
 ```
@@ -76,9 +79,9 @@ Translate an object to any given language, it returns a promise with the transla
 
 ## What's next?
 #### TODO
-
-* Allow the use of other translate services such as yandex & bing
-* Unit test
+[✅] Adding yandex service
+[❌] Adding bing service
+[❌] Unit test
 
 
 #### Reach out
@@ -86,7 +89,5 @@ Translate an object to any given language, it returns a promise with the transla
 Feel free to reach out with feedback via [github](https://github.com/KhaledMohamedP/translate-json-object/issues): `issue`, `feature`, `bug`, or `enhancement` inputs are greatly appreciated
 
 ____
-
-↳ Links: [NPM](https://www.npmjs.com/package/translate-json-object) | [GitHub](https://github.com/KhaledMohamedP/translate-json-object)
 
 © MIT

@@ -1,7 +1,7 @@
 # Translate a JSON Object
 ↳ Links: [NPM](https://www.npmjs.com/package/translate-json-object) | [GitHub](https://github.com/KhaledMohamedP/translate-json-object)
 
-A Node.js module to translate a JSON object from a detectable language to any other language currently via [google translate API](https://cloud.google.com/translate/docs)
+A Node.js module to translate a JSON object from a detectable language to any other language currently via [google translate API](https://cloud.google.com/translate/docs) | [yandex translate](https://tech.yandex.com/translate/)
 
 ## ⍗ Install
 
@@ -19,16 +19,12 @@ var TranslateJSONObject = require('translate-json-object');
 // Get an instance
 var TJO = TranslateJSONObject();
 
-// Initialize your API
+// Initialize your API for this TJO instance
 TJO.init({
   googleApiKey: 'googleApiKeyHERE'
 });
-```
 
-#### Use
-
-```javascript
-// A sample object
+// An example scenario
 var srcObj = {
   "name": "Please enter your name",
   "list": ["translate", "object", "made", "easy"],
@@ -42,6 +38,7 @@ var promise = TJO.translate(srcObj, 'es');
 
 promise.then(function(data) {
   console.log(data);
+  // RESULT ->
   // { name: 'por favor, escriba su nombre',
   //   list: [ 'traducir', 'objeto', 'hecho', 'fácil' ],
   //   nested: { hello: 'Hola', world: 'mundo' }

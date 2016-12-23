@@ -24,8 +24,9 @@
   },
   "homepage": "https://github.com/KhaledMohamedP/translate-json-object#readme",
   "dependencies": {
-    "google-translate": "~1.0.6",
-    "lodash": "~4.11.1",
-    "promise": "~7.1.1"
+    "google-translate": "1.0.6",
+    "lodash": "4.11.1",
+    "promise": "7.1.1",
+    "yandex-translate": "2.1.0"
   }
 }

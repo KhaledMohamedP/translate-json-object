@@ -1,6 +1,6 @@
 {
   "name": "translate-json-object",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Translate a JSON object to any language via google translate API",
   "main": "lib/TranslateJSONObject.js",
   "scripts": {

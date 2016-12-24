@@ -17,9 +17,9 @@ npm i translate-json-object
 // Require the module and instantiate instance
 var TJO = require('translate-json-object')();
 
+// Choose the service to use google/yandex, if you provide both yandex will be used as the default
 TJO.init({
   googleApiKey: 'api_key',
-  // or
   yandexApiKey: 'api_key'
 });
 
@@ -76,7 +76,7 @@ Translate an object to any given language, it returns a promise with the transla
 * [✅] Adding yandex service v2.1.0
 * [❌] Adding bing service
 * [❌] Unit test
-* [❌] JS Linting
+* [✅] JS Linting
 
 #### Reach out
 

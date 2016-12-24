@@ -4,7 +4,7 @@
   "description": "Translate a JSON object to any language via google or yandex translate API",
   "main": "lib/translate-json-object.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+		"lint": "xo"
   },
   "repository": {
     "type": "git",

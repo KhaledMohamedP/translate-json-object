@@ -2,7 +2,7 @@
   "name": "translate-json-object",
   "version": "2.1.0",
   "description": "Translate a JSON object to any language via google or yandex translate API",
-  "main": "lib/TranslateJSONObject.js",
+  "main": "lib/translate-json-object.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -28,5 +28,8 @@
     "lodash": "4.11.1",
     "promise": "7.1.1",
     "yandex-translate": "2.1.0"
+  },
+  "devDependencies": {
+    "xo": "~0.17.1"
   }
 }

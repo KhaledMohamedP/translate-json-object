@@ -14,11 +14,12 @@ npm i translate-json-object
 #### Setup:
 
 ```javascript
-var TranslateJSONObject = require('translate-json-object');
+// Require the module and instantiate instance
+var TJO = require('translate-json-object')();
 
-// Get an instance & Initialize api token
-var TJO = TranslateJSONObject().init({
+TJO.init({
   googleApiKey: 'api_key',
+  // or
   yandexApiKey: 'api_key'
 });
 

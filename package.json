@@ -1,7 +1,7 @@
 {
   "name": "translate-json-object",
   "version": "2.1.0",
-  "description": "Translate a JSON object to any language via google translate API",
+  "description": "Translate a JSON object to any language via google or yandex translate API",
   "main": "lib/TranslateJSONObject.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

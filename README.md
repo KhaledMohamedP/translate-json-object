@@ -16,15 +16,13 @@ npm i translate-json-object
 ```javascript
 var TranslateJSONObject = require('translate-json-object');
 
-// Get an instance
-var TJO = TranslateJSONObject();
-
-// Initialize your API for this TJO instance
-TJO.init({
-  googleApiKey: 'googleApiKeyHERE'
+// Get an instance & Initialize api token
+var TJO = TranslateJSONObject().init({
+  googleApiKey: 'api_key',
+  yandexApiKey: 'api_key'
 });
 
-// An example scenario
+// An example scenario (json) object
 var srcObj = {
   "name": "Please enter your name",
   "list": ["translate", "object", "made", "easy"],
@@ -34,9 +32,7 @@ var srcObj = {
     }
 };
 
-var promise = TJO.translate(srcObj, 'es');
-
-promise.then(function(data) {
+TJO.translate(srcObj, 'es').then(function(data) {
   console.log(data);
   // RESULT ->
   // { name: 'por favor, escriba su nombre',
@@ -76,10 +72,10 @@ Translate an object to any given language, it returns a promise with the transla
 
 ## What's next?
 #### TODO
-[✅] Adding yandex service
-[❌] Adding bing service
-[❌] Unit test
-
+* [✅] Adding yandex service v2.1.0
+* [❌] Adding bing service
+* [❌] Unit test
+* [❌] JS Linting
 
 #### Reach out
 

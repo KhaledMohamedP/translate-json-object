@@ -1,6 +1,6 @@
 {
   "name": "translate-json-object",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Translate a JSON object to any language via google or yandex translate API",
   "main": "lib/translate-json-object.js",
   "scripts": {
@@ -24,10 +24,10 @@
   },
   "homepage": "https://github.com/KhaledMohamedP/translate-json-object#readme",
   "dependencies": {
-    "google-translate": "1.0.6",
-    "lodash": "4.11.1",
+    "google-translate": "1.0.7",
+    "lodash": "4.17.3",
     "promise": "7.1.1",
-    "yandex-translate": "2.1.0"
+    "yandex-translate": "2.1.1"
   },
   "devDependencies": {
     "xo": "0.17.1"

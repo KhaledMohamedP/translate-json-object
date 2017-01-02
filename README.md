@@ -77,8 +77,8 @@ Translate an object to any given language, it returns a promise with the transla
 #### TODO
 * [✅] Adding yandex service v2.1.0
 * [❌] Adding bing service
-* [❌] Unit test
-* [✅] JS Linting
+* [✅] Unit test v2.1.4
+* [✅] JS Linting v2.1.3
 
 #### Reach out
 

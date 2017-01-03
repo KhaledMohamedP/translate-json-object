@@ -8,8 +8,9 @@
 
 
 A Node.js module to translate a JSON object from a detectable language to any other language currently via
-1- [google translate API](https://cloud.google.com/translate/docs)
-2- [yandex translate](https://tech.yandex.com/translate/)
+
+1. [google translate](https://cloud.google.com/translate/docs)
+2. [yandex translate](https://tech.yandex.com/translate/)
 
 ## ⍗ Install
 
@@ -18,8 +19,6 @@ npm i translate-json-object
 ```
 
 ## Example
-
-#### Setup:
 
 ```javascript
 // Require the module and instantiate instance

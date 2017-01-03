@@ -1,62 +1,70 @@
 {
-	"name": "translate-json-object",
-	"version": "0.0.0-development",
-	"description": "Translate a JSON object to any language via google or yandex translate API",
-	"main": "lib/translate-json-object.js",
-	"scripts": {
-		"commit": "git-cz",
-		"lint": "xo",
-		"test": "jest --coverage",
-		"test:watch": "jest --coverage --watchAll",
-		"semantic-release": "semantic-release pre && npm publish && semantic-release post"
-	},
-	"dependencies": {
-		"google-translate": "1.0.7",
-		"lodash": "4.17.3",
-		"promise": "7.1.1",
-		"yandex-translate": "2.1.1"
-	},
-	"devDependencies": {
-		"commitizen": "2.9.3",
-		"cz-conventional-changelog": "1.2.0",
-		"jest": "18.0.0",
-		"semantic-release": "6.3.2",
-		"xo": "0.17.1"
-	},
-	"xo": {
-		"global": [
-			"jest",
-			"expect",
-			"test",
-			"describe",
-			"it"
-		]
-	},
-	"jest": {
-		"coverageThreshold": {
-			"global": {
-				"branches": 85,
-				"functions": 85,
-				"lines": 85,
-				"statements": 85
-			}
-		}
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/KhaledMohamedP/translate-json-object.git"
-	},
-	"keywords": [
-		"translate",
-		"object",
-		"JSON",
-		"google",
-		"translate"
-	],
-	"author": "Khaled Mohamed",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/KhaledMohamedP/translate-json-object/issues"
-	},
-	"homepage": "https://github.com/KhaledMohamedP/translate-json-object#readme"
+  "name": "translate-json-object",
+  "version": "0.0.0-development",
+  "description": "Translate a JSON object to any language via google or yandex translate API",
+  "main": "lib/translate-json-object.js",
+  "scripts": {
+    "commit": "git-cz",
+    "commitmsg": "validate-commit-msg",
+    "lint": "xo",
+    "test": "jest --coverage",
+    "test:watch": "jest --coverage --watchAll",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "dependencies": {
+    "google-translate": "1.0.7",
+    "lodash": "4.17.3",
+    "promise": "7.1.1",
+    "yandex-translate": "2.1.1"
+  },
+  "devDependencies": {
+    "commitizen": "2.9.3",
+    "cz-conventional-changelog": "1.2.0",
+    "husky": "0.12.0",
+    "jest": "18.0.0",
+    "semantic-release": "6.3.2",
+    "validate-commit-msg": "2.8.2",
+    "xo": "0.17.1"
+  },
+  "xo": {
+    "global": [
+      "jest",
+      "expect",
+      "test",
+      "describe",
+      "it"
+    ]
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 85,
+        "functions": 85,
+        "lines": 85,
+        "statements": 85
+      }
+    }
+  },
+	"config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "keywords": [
+    "translate",
+    "object",
+    "JSON",
+    "google",
+    "translate"
+  ],
+  "author": "Khaled Mohamed",
+  "license": "MIT",
+  "homepage": "https://github.com/KhaledMohamedP/translate-json-object#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KhaledMohamedP/translate-json-object.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KhaledMohamedP/translate-json-object/issues"
+  }
 }

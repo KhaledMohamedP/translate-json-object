@@ -4,6 +4,8 @@
 [![Build Status](https://travis-ci.org/KhaledMohamedP/translate-json-object.svg?branch=master)](https://travis-ci.org/KhaledMohamedP/translate-json-object)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/fd5819795ed745d2b793787849b5400d)](https://www.codacy.com/app/khaledmohamedp/translate-json-object?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=KhaledMohamedP/translate-json-object&amp;utm_campaign=Badge_Grade)  [![Version](https://img.shields.io/npm/v/translate-json-object.svg?style=flat)](https://www.npmjs.com/package/translate-json-object)  [![License](https://img.shields.io/npm/l/translate-json-object.svg?style=flat)](https://www.npmjs.com/package/translate-json-object)  [![Downloads](http://img.shields.io/npm/dm/translate-json-object.svg?style=flat)](https://www.npmjs.com/package/translate-json-object)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 
 A Node.js module to translate a JSON object from a detectable language to any other language currently via [google translate API](https://cloud.google.com/translate/docs) | [yandex translate](https://tech.yandex.com/translate/)
 

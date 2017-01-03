@@ -83,7 +83,7 @@ Translate an object to any given language, it returns a promise with the transla
 * [✅] Adding yandex service v2.1.0
 * [✅] Unit test v2.1.4
 * [✅] JS Linting v2.1.3
-* [✅] semantic-release-cli
+* [✅] semantic-release-cli v2.2.0
 * [❌] Adding bing translate service
 * [❌] Adding cli utility
 

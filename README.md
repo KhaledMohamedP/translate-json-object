@@ -9,8 +9,8 @@
 
 A Node.js module to translate a JSON object from a detectable language to any other language currently via
 
-1. [google translate](https://cloud.google.com/translate/docs)
-2. [yandex translate](https://tech.yandex.com/translate/)
+* [google translate](https://cloud.google.com/translate/docs)
+* [yandex translate](https://tech.yandex.com/translate/)
 
 ## ⍗ Install
 
@@ -53,32 +53,8 @@ TJO.translate(srcObj, 'es').then(function(data) {
 
 ```
 ## ◉ API
+See [API Doc](https://github.com/KhaledMohamedP/translate-json-object/blob/master/docs/api.md)
 
-```javascript
-var api = require('translate-json-object')();
-```
-
-### | `api.init(setting)`
-
-Initialize the setting of your module instance, it takes a [`setting`](#setting) object
-
-#### || setting
-
-| properties    | Type      | Description  
-| ------------- |---------- | --------------
-| googleApiKey  | `String`  | Google translate api token key
-
-
-### | `api.translate(sourceObject, language)`
-
-Translate an object to any given language, it returns a promise with the translated data
-
-| Parameters    | Type     | Description  
-| ------------- | -------- | --------------
-| sourceObject  | `Object` | The object to be translated
-| language      | `String` | The `language code` you wish to translate too e.g `'es', 'fr', 'ar' ...` - [see list](https://tech.yandex.com/translate/doc/dg/concepts/langs-docpage)
-
-## What's next?
 #### TODO
 * [✅] Adding yandex service v2.1.0
 * [✅] Unit test v2.1.4

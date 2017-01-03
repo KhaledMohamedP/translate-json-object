@@ -7,7 +7,9 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 
-A Node.js module to translate a JSON object from a detectable language to any other language currently via [google translate API](https://cloud.google.com/translate/docs) | [yandex translate](https://tech.yandex.com/translate/)
+A Node.js module to translate a JSON object from a detectable language to any other language currently via
+1- [google translate API](https://cloud.google.com/translate/docs)
+2- [yandex translate](https://tech.yandex.com/translate/)
 
 ## ⍗ Install
 

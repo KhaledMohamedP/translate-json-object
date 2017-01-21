@@ -54,6 +54,8 @@ TJO.translate(srcObj, 'es').then(function(data) {
 ## ◉ API
 See [API Doc](https://github.com/KhaledMohamedP/translate-json-object/blob/master/docs/api.md)
 
+## ✼ Others
+
 #### TODO 🔧
 * ✔︎ Adding yandex service v2.1.0
 * ✔︎ Unit test v2.1.4

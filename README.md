@@ -7,8 +7,7 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 
-A Node.js module to translate a JSON object from a detectable language to any other language currently via
-
+A Node.js module to translate a JSON object from a detectable language to any other language via
 * [google translate](https://cloud.google.com/translate/docs)
 * [yandex translate](https://tech.yandex.com/translate/)
 
@@ -55,17 +54,17 @@ TJO.translate(srcObj, 'es').then(function(data) {
 ## ◉ API
 See [API Doc](https://github.com/KhaledMohamedP/translate-json-object/blob/master/docs/api.md)
 
-#### TODO
-* [✅] Adding yandex service v2.1.0
-* [✅] Unit test v2.1.4
-* [✅] JS Linting v2.1.3
-* [✅] semantic-release-cli v2.2.0
-* [❌] Adding bing translate service
-* [❌] Adding cli utility
+#### TODO 🔧
+* ✔︎ Adding yandex service v2.1.0
+* ✔︎ Unit test v2.1.4
+* ✔︎ JS Linting v2.1.3
+* ✔︎ semantic-release-cli v2.2.0
+* 🗅 Adding bing translate service
+* 🗅 Adding cli utility
 
-#### Reach out
-
-Feel free to reach out with feedback via [github](https://github.com/KhaledMohamedP/translate-json-object/issues): `issue`, `feature`, `bug`, or `enhancement` inputs are greatly appreciated
+#### Reach Out ☮
+* ⚐ Feedback via [GitHub Issues](https://github.com/KhaledMohamedP/translate-json-object/issues)
+* ♡ Welcome all contribution
 
 ____
 

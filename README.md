@@ -57,8 +57,8 @@ See [API Doc](https://github.com/KhaledMohamedP/translate-json-object/blob/maste
     ✔︎ Unit test v2.1.4
     ✔︎ JS Linting v2.1.3
     ✔︎ semantic-release-cli v2.2.0
-    ⎚ Adding bing translate service
-    🗅 Adding cli utility
+    ☐ Adding bing translate service
+    ☐ Adding cli utility
 
 #### Reach Out ☮
 * ⚐ Feedback via [GitHub Issues](https://github.com/KhaledMohamedP/translate-json-object/issues)

@@ -1,8 +1,7 @@
 # Translate a JSON Object
-↳ [Links: [NPM](https://www.npmjs.com/package/translate-json-object) | [GitHub](https://github.com/KhaledMohamedP/translate-json-object)]
+[![Build Status](https://travis-ci.org/KhaledMohamedP/translate-json-object.svg?branch=master)](https://travis-ci.org/KhaledMohamedP/translate-json-object) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/fd5819795ed745d2b793787849b5400d)](https://www.codacy.com/app/khaledmohamedp/translate-json-object?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=KhaledMohamedP/translate-json-object&amp;utm_campaign=Badge_Grade)  [![Version](https://img.shields.io/npm/v/translate-json-object.svg?style=flat)](https://www.npmjs.com/package/translate-json-object)   [![Downloads](http://img.shields.io/npm/dm/translate-json-object.svg?style=flat)](https://www.npmjs.com/package/translate-json-object)
 
-↳ [![Build Status](https://travis-ci.org/KhaledMohamedP/translate-json-object.svg?branch=master)](https://travis-ci.org/KhaledMohamedP/translate-json-object) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/fd5819795ed745d2b793787849b5400d)](https://www.codacy.com/app/khaledmohamedp/translate-json-object?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=KhaledMohamedP/translate-json-object&amp;utm_campaign=Badge_Grade)  [![Version](https://img.shields.io/npm/v/translate-json-object.svg?style=flat)](https://www.npmjs.com/package/translate-json-object)   [![Downloads](http://img.shields.io/npm/dm/translate-json-object.svg?style=flat)](https://www.npmjs.com/package/translate-json-object)
-
+↳ Links: [NPM](https://www.npmjs.com/package/translate-json-object) | [GitHub](https://github.com/KhaledMohamedP/translate-json-object)
 
 A Node.js module to translate a JSON object from a detectable language to any other language via
 * Google: [translate](https://translate.google.com/) | [API](https://cloud.google.com/translate/docs)
@@ -58,8 +57,8 @@ See [API Doc](https://github.com/KhaledMohamedP/translate-json-object/blob/maste
     ✔︎ Unit test v2.1.4
     ✔︎ JS Linting v2.1.3
     ✔︎ semantic-release-cli v2.2.0
-    ⎚ Adding bing translate service
-    🗅 Adding cli utility
+    ☐ Adding bing translate service
+    ☐ Adding cli utility
 
 #### Reach Out ☮
 * ⚐ Feedback via [GitHub Issues](https://github.com/KhaledMohamedP/translate-json-object/issues)

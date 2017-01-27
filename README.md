@@ -19,14 +19,15 @@ npm i translate-json-object
 // Require the module and instantiate instance
 var TJO = require('translate-json-object')();
 
-// Choose the service to use google/yandex, if you provide both yandex will be used as the default
+// Choose the service to use google/yandex,
+// if you provide both yandex will be used as the default
 TJO.init({
   googleApiKey: 'api_key',
   yandexApiKey: 'api_key'
 });
 
 // An example scenario (json) object
-var srcObj = {
+var example = {
   "name": "Please enter your name",
   "list": ["translate", "object", "made", "easy"],
   "nested": {
@@ -35,18 +36,24 @@ var srcObj = {
     }
 };
 
-TJO.translate(srcObj, 'es').then(function(data) {
-  console.log(data);
-  // RESULT ->
-  // { name: 'por favor, escriba su nombre',
-  //   list: [ 'traducir', 'objeto', 'hecho', 'fácil' ],
-  //   nested: { hello: 'Hola', world: 'mundo' }
-  // }
-}).catch(function(err) {
-  console.log('error ', err)
-});
-
+// Translate method takes (source object, and language code)
+TJO.translate(example, 'es')
+    .then(function(data) {
+      console.log(data);
+    }).catch(function(err) {
+      console.log('error ', err)
+    });
 ```
+
+RESULT ↴
+
+```javascript
+{ name: 'por favor, escriba su nombre',
+ list: [ 'traducir', 'objeto', 'hecho', 'fácil' ],
+ nested: { hello: 'Hola', world: 'mundo' }
+}
+```
+
 ## ◉ API
 See [API Doc](https://github.com/KhaledMohamedP/translate-json-object/blob/master/docs/api.md)
 

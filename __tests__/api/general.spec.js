@@ -39,6 +39,14 @@ describe('Translate Module TJO: ', () => {
 						});
 	});
 
+	it('Should fail to translate because of a missing language param: fail', () => {
+		init({yandexApiKey: 'apiToken'});
+		return translate(mockDataObject)
+						.catch(err => {
+							expect(err).toBeDefined();
+						});
+	});
+
 	it('should TJO.translate fails, becuase of missing google/yandex token', () => {
 		init();
 		return translate(mockDataObject, 'ar')

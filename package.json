@@ -16,7 +16,7 @@
     "google-translate": "1.0.7",
     "lodash": "4.17.3",
     "promise": "7.1.1",
-    "yandex-translate": "2.1.1"
+    "yandex-translate": "2.1.2"
   },
   "devDependencies": {
     "commitizen": "2.9.3",

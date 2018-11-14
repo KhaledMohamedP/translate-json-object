@@ -10,11 +10,11 @@
     "test": "jest --coverage",
     "test:watch": "jest --coverage --watchAll",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-		"docs": "jsdoc2md lib/translate-json-object.js > docs/api.md"
+    "docs": "jsdoc2md lib/translate-json-object.js > docs/api.md"
   },
   "dependencies": {
     "google-translate": "1.0.7",
-    "lodash": "4.17.3",
+    "lodash": "4.17.5",
     "promise": "7.1.1",
     "yandex-translate": "2.1.2"
   },
@@ -57,7 +57,7 @@
     "object",
     "JSON",
     "google",
-		"yandex",
+    "yandex",
     "translate"
   ],
   "author": "Khaled Mohamed",

@@ -13,9 +13,9 @@
     "docs": "jsdoc2md lib/translate-json-object.js > docs/api.md"
   },
   "dependencies": {
-    "google-translate": "^2.2.0",
-    "lodash": "^4.17.11",
-    "promise": "^8.0.2",
+    "google-translate": "2.2.0",
+    "lodash": "4.17.11",
+    "promise": "8.0.2",
     "yandex-translate": "2.1.2"
   },
   "devDependencies": {

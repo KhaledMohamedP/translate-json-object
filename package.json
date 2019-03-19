@@ -9,8 +9,11 @@
     "lint": "xo",
     "test": "jest --coverage",
     "test:watch": "jest --coverage --watchAll",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "semantic-release": "semantic-release -d && npm publish && semantic-release",
     "docs": "jsdoc2md lib/translate-json-object.js > docs/api.md"
+  },
+  "release": {
+    "branch": "master"
   },
   "dependencies": {
     "google-translate": "2.2.0",
@@ -19,12 +22,12 @@
     "yandex-translate": "2.1.2"
   },
   "devDependencies": {
-    "commitizen": "^3.0.7",
+    "commitizen": "3.0.7",
     "cz-conventional-changelog": "1.2.0",
     "husky": "0.12.0",
-    "jest": "^24.4.0",
-    "jsdoc-to-markdown": "^4.0.1",
-    "semantic-release": "^15.13.4",
+    "jest": "24.4.0",
+    "jsdoc-to-markdown": "4.0.1",
+    "semantic-release": "15.13.4",
     "validate-commit-msg": "2.8.2",
     "xo": "0.17.1"
   },

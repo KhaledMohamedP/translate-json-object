@@ -69,7 +69,7 @@ See [API Doc](https://github.com/KhaledMohamedP/translate-json-object/blob/maste
 
 #### Reach Out ☮
 * ⚐ Feedback via [GitHub Issues](https://github.com/KhaledMohamedP/translate-json-object/issues)
-* ♡ Welcome all contribution
+* ♡ Welcome all [Contribution](https://github.com/KhaledMohamedP/translate-json-object/blob/master/CONTRIBUTING.md)
 
 ____
 

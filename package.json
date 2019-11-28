@@ -26,7 +26,7 @@
     "jsdoc-to-markdown": "2.0.1",
     "semantic-release": "6.3.2",
     "validate-commit-msg": "2.14.0",
-    "xo": "0.25.3"
+    "xo": "0.17.1"
   },
   "xo": {
     "global": [

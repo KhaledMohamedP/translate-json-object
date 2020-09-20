@@ -5,7 +5,7 @@ declare module 'translate-json-object' {
     }
 
     function init(options: Options): boolean
-    function translate(srcObj: object, language: any): Promise<object>
+    function translate(srcObj: object, language: string): Promise<object>
 
     interface Result {
         init: typeof init

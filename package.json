@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "google-translate": "2.2.0",
-    "lodash": "4.17.20",
+    "lodash": "4.17.19",
     "promise": "8.0.3",
     "yandex-translate": "2.1.3"
   },
